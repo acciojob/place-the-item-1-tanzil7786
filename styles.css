@@ -1,26 +1,28 @@
-#box{
+.box{
+	width:100px;
+	height:100px;
+	background-color:green;
+	
+}
+#box1{
+	background-color:red;
+	
+}
+#box2{
+	background-color:blue;
+}
+.holder{
 	display:flex;
 	justify-content:space-between;
 	flex-wrap:wrap;
+	flex-direction:row;
 }
-#box1{
-	font-size:50px;
-	background-color: #008001;
-	padding-right:75px;
-	padding-bottom:50px;
-}
-#box2{
-	font-size:50px;
-	background-color: #FF0000;
-	padding-right:75px;
-	padding-bottom:50px;
-}
-#box3{
-	font-size:50px;
-	background-color: #0000FF;
-	padding-right:75px;
-	padding-bottom:50px;
-}
-
-
-/* Your CSS Code here. */
+.box:nth-child(1){
+	order:3;
+ }
+ .box:nth-child(2){
+	order:1;
+} 
+.box:nth-child(2){
+	order:3;
+} 
